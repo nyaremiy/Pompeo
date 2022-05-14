@@ -1,0 +1,54 @@
+.c-type-product {
+  border-width: 20px;
+  border-style: solid;
+  position: relative;
+  border-radius: 50%;
+  height: 220px;
+  width: 220px;
+  @include media('<=desktop') {
+    height: 180px;
+    width: 180px;
+  }
+  @include media('<=tablet') {
+    border-width: 10px;
+    height: 130px;
+    width: 130px;
+  }
+  @include media('<=phone') {
+    margin-top: 30px;
+    height: 200px;
+    width: 200px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  &__image-box {
+    max-width: 70px;
+  }
+  &--yellow {
+    border-color: $c-dark-earth-yellow;
+    background-color: $c-earth-yellow;
+  }
+  &--orange {
+    border-color: $c-dark-orioles-orange;
+    background-color: $c-orioles-orange;
+  }
+  &--red {
+    background-color: $c-blood2;
+    border-color: $c-dark-blood2;
+  }
+  &__block {
+    transform: translate(-50%, -50%);
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  }
+  &__name {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: $c-white;
+  }
+}

@@ -1,0 +1,6 @@
+mixin type-product(args = {})
+  .c-type-product(class= 'c-type-product--'+args.class)
+    .c-type-product__block
+      .c-type-product__image-box 
+        img(src= args.src, alt="Type Product")
+      .c-type-product__name= args.name

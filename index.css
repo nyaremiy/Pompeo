@@ -691,6 +691,218 @@ h6 {
   }
 }
 
+.c-product-categories {
+  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 150px;
+}
+
+.c-product-categories__wrapper {
+  font-family: 'Poppins', sans-serif;
+  padding-top: 120px;
+}
+
+.c-product-categories__subtitle {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ac1313;
+  font-size: 14px;
+}
+
+@media (max-width: 480px) {
+  .c-product-categories__subtitle {
+    font-size: 12px;
+  }
+}
+
+.c-product-categories__title {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+@media (max-width: 480px) {
+  .c-product-categories__title {
+    font-size: 28px;
+    margin-top: 0;
+  }
+}
+
+.c-product-categories__circle-box {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 65px;
+}
+
+@media (max-width: 480px) {
+  .c-product-categories__circle-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.c-product-categories__block-desc {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 90px;
+}
+
+@media (max-width: 768px) {
+  .c-product-categories__block-desc {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.c-product-categories__mintitle {
+  line-height: 36px;
+  max-width: 320px;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+@media (max-width: 480px) {
+  .c-product-categories__mintitle {
+    font-size: 22px;
+  }
+}
+
+.c-product-categories__description {
+  font-family: 'Libre Franklin', sans-serif;
+  color: #6c6c6c;
+  line-height: 24px;
+  max-width: 500px;
+  margin-top: 25px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .c-product-categories__description {
+    max-width: 768px;
+  }
+}
+
+.c-product-categories__desc:first-child {
+  margin-right: 40px;
+}
+
+@media (max-width: 768px) {
+  .c-product-categories__desc:first-child {
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .c-product-categories__desc:last-child {
+    margin-top: 30px;
+  }
+}
+
+.c-type-product {
+  border-width: 20px;
+  border-style: solid;
+  position: relative;
+  border-radius: 50%;
+  height: 220px;
+  width: 220px;
+}
+
+@media (max-width: 1024px) {
+  .c-type-product {
+    height: 180px;
+    width: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .c-type-product {
+    border-width: 10px;
+    height: 130px;
+    width: 130px;
+  }
+}
+
+@media (max-width: 480px) {
+  .c-type-product {
+    margin-top: 30px;
+    height: 200px;
+    width: 200px;
+  }
+  .c-type-product:first-child {
+    margin-top: 0;
+  }
+}
+
+.c-type-product__image-box {
+  max-width: 70px;
+}
+
+.c-type-product--yellow {
+  border-color: #bd9452;
+  background-color: #e4b366;
+}
+
+.c-type-product--orange {
+  border-color: #da500c;
+  background-color: #f05b10;
+}
+
+.c-type-product--red {
+  background-color: #a21010;
+  border-color: #8d0808;
+}
+
+.c-type-product__block {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.c-type-product__name {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.block-product__image-box {
+  position: relative;
+}
+
+.block-product__block__silver {
+  height: 220px;
+  width: 100%;
+  background-color: silver;
+}
+
 .e-link {
   cursor: pointer;
 }

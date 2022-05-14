@@ -1,0 +1,10 @@
+.block-product {
+  &__image-box {
+    position: relative;
+  }
+  &__block__silver {
+    height: 220px;
+    width: 100%;
+    background-color: silver;
+  }
+}

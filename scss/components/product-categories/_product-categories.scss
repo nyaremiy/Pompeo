@@ -1,0 +1,78 @@
+.c-product-categories {
+  border-bottom: 1px solid $c-bright-gray;
+  padding-bottom: 150px;
+  &__wrapper {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 120px;
+  }
+  &__subtitle {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 24px;
+    font-weight: 700;
+    color: $c-blood;
+    font-size: 14px;
+    @include media('<=phone') {
+      font-size: 12px;
+    }
+  }
+  &__title {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 40px;
+    @include media('<=phone') {
+      font-size: 28px;
+      margin-top: 0;
+    }
+  }
+  &__circle-box {
+    @include flexLine();
+    justify-content: space-evenly;
+    margin-top: 65px;
+    @include media('<=phone') {
+      flex-direction: column;
+    }
+  }
+  &__block-desc {
+    @include flexLine();
+    margin-top: 90px;
+    @include media('<=tablet') {
+      flex-direction: column;
+    }
+  }
+  &__mintitle {
+    line-height: 36px;
+    max-width: 320px;
+    font-weight: 700;
+    font-size: 30px;
+    @include media('<=phone') {
+      font-size: 22px;
+    }
+  }
+  &__description {
+    font-family: 'Libre Franklin', sans-serif;
+    color: $c-dim-gray;
+    line-height: 24px;
+    max-width: 500px;
+    margin-top: 25px;
+    font-size: 14px;
+    @include media('<=tablet') {
+      max-width: 768px;
+    }
+  }
+  &__desc {
+    &:first-child {
+      margin-right: 40px;
+      @include media('<=tablet') {
+        margin: 0;
+      }
+    }
+    @include media('<=tablet') {
+      &:last-child {
+        margin-top: 30px;
+      }
+    }
+  }
+}
