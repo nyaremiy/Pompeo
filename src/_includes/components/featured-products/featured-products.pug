@@ -1,0 +1,12 @@
+mixin featured-products(args = {})
+  .c-featured-products
+    .c-featured-products__block(class=  args.classReverse)
+      .c-featured-products__image-block
+        .c-featured-products__image-box(class= args.classImg)
+          img(src= args.src, alt="Product")
+        .c-featured-products__silver-block
+      .c-featured-products__text-block
+        h3.c-featured-products__title= args.title
+        p.c-featured-products__text= args.text
+        .c-featured-products__link
+          +link({text: 'View Details', class : 'e-link--featured'})

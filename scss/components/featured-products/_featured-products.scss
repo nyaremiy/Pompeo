@@ -1,0 +1,72 @@
+.c-featured-products {
+  &__block {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    &--reverse {
+      flex-direction: row-reverse;
+      @include media('<=tablet') {
+        flex-direction: column-reverse;
+      }
+    }
+    @include media('<=tablet') {
+      flex-direction: column;
+    }
+  }
+  &__image-block {
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    @include media('<=desktop') {
+      max-width: 375px;
+      min-width: 375px;
+    }
+  }
+  &__image-box {
+    margin: 0 auto;
+    width: 250px;
+    @include media('<=desktop') {
+      width: 160px;
+    }
+    &--second {
+      width: 350px;
+      @include media('<=desktop') {
+        width: 270px;
+      }
+    }
+  }
+  &__silver-block {
+    background-color: $c-cultured;
+    transform: translateY(-50%);
+    position: absolute;
+    height: 220px;
+    z-index: -1;
+    width: 100%;
+    top: 50%;
+  }
+  &__text-block {
+    font-family: 'Poppins', sans-serif;
+    max-width: 450px;
+    margin: 0 30px;
+    @include media('<=tablet') {
+      max-width: 768px;
+      margin: 0;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+  }
+  &__text {
+    font-family: 'Libre Franklin', sans-serif;
+    color: $c-dim-gray;
+    line-height: 24px;
+    margin-top: 25px;
+    font-size: 14px;
+  }
+  &__link {
+    font-weight: 700;
+    margin-top: 30px;
+    font-size: 14px;
+  }
+}
