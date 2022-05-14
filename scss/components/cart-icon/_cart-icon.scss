@@ -1,0 +1,20 @@
+.c-cart-icon {
+  padding-right: 5px;
+  position: relative;
+  padding-top: 8px;
+  cursor: pointer;
+  font-size: 20px;
+  &__buy {
+    position: absolute;
+    border-radius: 50%;
+    background: $c-red;
+    display: none;
+    height: 10px;
+    width: 10px;
+    right: 0;
+    top: 0;
+    &--active {
+      display: block;
+    }
+  }
+}

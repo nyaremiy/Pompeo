@@ -1,0 +1,25 @@
+.c-header {
+  box-shadow: 1px 1px 3px rgba($c-black, 0.05);
+  background-color: $c-white;
+  @include fixedTop();
+  z-index: 10;
+  &__wrapper {
+    padding-bottom: 20px;
+    @include flexLine();
+    padding-top: 20px;
+  }
+  &__logo {
+    @include media('<=tablet') {
+      margin: 0 auto;
+    }
+  }
+  &__nav {
+    margin-right: 15px;
+    @include media('<=tablet') {
+      margin-right: 0;
+    }
+  }
+  &__block {
+    @include flexLine();
+  }
+}

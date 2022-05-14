@@ -1,5 +1,11 @@
 extends ./src/_extends/common
 
+block styles 
+  link(rel="stylesheet" href="./index.css")
 block main 
   .app
-    
+    +header
+    //- +locked-screen
+
+block scripts 
+  script(src="./index.js" defer type="module") 

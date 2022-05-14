@@ -1,0 +1,12 @@
+mixin navigation(args = [])
+  nav.c-navigation#js-menuPhone 
+    ul.c-navigation__list 
+      li.c-navigation__item 
+        +link({text : 'home', class : 'e-link--nav'})
+      li.c-navigation__item 
+        +link({text : 'about', class : 'e-link--nav'})
+      li.c-navigation__item 
+        +link({text : 'shop', class : 'e-link--nav'})
+      li.c-navigation__item 
+        +link({text : 'contact', class : 'e-link--nav'})
+

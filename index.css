@@ -5,6 +5,8 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -189,9 +191,9 @@ select {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type='button'],
+[type='reset'],
+[type='submit'] {
   -webkit-appearance: button;
 }
 
@@ -199,9 +201,9 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -210,9 +212,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -263,8 +265,8 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type="checkbox"],
-[type="radio"] {
+[type='checkbox'],
+[type='radio'] {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   /* 1 */
@@ -275,8 +277,8 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -284,7 +286,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type="search"] {
+[type='search'] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -294,7 +296,7 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type="search"]::-webkit-search-decoration {
+[type='search']::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -358,6 +360,7 @@ li {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 img {
@@ -378,4 +381,337 @@ h6 {
   font-size: inherit;
   font-weight: 400;
   margin: 0;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.container {
+  max-width: 1215px;
+  padding: 0 20px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.c-header {
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.05);
+          box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.c-header__wrapper {
+  padding-bottom: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .c-header__logo {
+    margin: 0 auto;
+  }
+}
+
+.c-header__nav {
+  margin-right: 15px;
+}
+
+@media (max-width: 768px) {
+  .c-header__nav {
+    margin-right: 0;
+  }
+}
+
+.c-header__block {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .c-navigation {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #ebebeb;
+    position: absolute;
+    overflow: auto;
+    height: 100vh;
+    z-index: 12;
+    left: -100%;
+    width: 60%;
+    top: 0;
+  }
+}
+
+@media (max-width: 768px) and (max-width: 480px) {
+  .c-navigation {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .c-navigation--open {
+    font-weight: 500;
+    left: 0;
+  }
+}
+
+.c-navigation__list {
+  border-right: 2px solid #ebebeb;
+  font-family: 'Poppins', sans-serif;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .c-navigation__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 50px;
+    padding-top: 80px;
+    border: none;
+  }
+}
+
+.c-navigation__item {
+  text-transform: uppercase;
+  margin-right: 20px;
+  color: #6c6c6c;
+  font-size: 12;
+  padding: 10px;
+}
+
+.c-navigation__item:last-child {
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .c-navigation__item {
+    margin: 0 0 15px 0;
+  }
+  .c-navigation__item:last-child {
+    margin-right: 0;
+  }
+}
+
+.c-cart-icon {
+  padding-right: 5px;
+  position: relative;
+  padding-top: 8px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.c-cart-icon__buy {
+  position: absolute;
+  border-radius: 50%;
+  background: #ff0000;
+  display: none;
+  height: 10px;
+  width: 10px;
+  right: 0;
+  top: 0;
+}
+
+.c-cart-icon__buy--active {
+  display: block;
+}
+
+.c-locked-screen {
+  background-color: rgba(235, 235, 235, 0.6);
+  position: fixed;
+  display: none;
+  height: 100vh;
+  z-index: 11;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.c-locked-screen--show {
+  display: block;
+}
+
+.e-link {
+  cursor: pointer;
+}
+
+.e-link--nav {
+  position: relative;
+  padding: 5px;
+}
+
+.e-link--nav::before {
+  content: '';
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #6c6c6c;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.e-link--nav:hover::before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.e-logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.125em;
+}
+
+.c-burger {
+  position: relative;
+  margin: 10px 10px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  cursor: pointer;
+  display: none;
+  height: 30px;
+  z-index: 12;
+  width: 30px;
+}
+
+@media (max-width: 768px) {
+  .c-burger {
+    display: inline-block;
+    position: fixed;
+    left: 20px;
+  }
+}
+
+.c-burger--open {
+  -webkit-transition: 0.2s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+  transition: 0.2s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  cursor: pointer;
+}
+
+.c-burger--open span {
+  -webkit-transition: 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+  transition: 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+  -webkit-transition-delay: 200ms;
+          transition-delay: 200ms;
+  border-radius: 50%;
+  background-color: #6c6c6c;
+}
+
+.c-burger span {
+  background-color: #6c6c6c;
+  position: absolute;
+  border-radius: 50%;
+  display: block;
+  height: 5px;
+  width: 5px;
+}
+
+.c-burger span:nth-child(1) {
+  left: 0;
+  top: 0;
+}
+
+.c-burger span:nth-child(2) {
+  left: 12px;
+  top: 0;
+}
+
+.c-burger span:nth-child(3) {
+  right: 0;
+  top: 0;
+}
+
+.c-burger span:nth-child(4) {
+  top: 12px;
+  left: 0;
+}
+
+.c-burger span:nth-child(5) {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+}
+
+.c-burger span:nth-child(6) {
+  right: 0px;
+  top: 12px;
+}
+
+.c-burger span:nth-child(7) {
+  bottom: 0px;
+  left: 0px;
+}
+
+.c-burger span:nth-child(8) {
+  position: absolute;
+  left: 12px;
+  bottom: 0px;
+}
+
+.c-burger span:nth-child(9) {
+  right: 0px;
+  bottom: 0px;
+}
+
+.c-burger:hover span {
+  -webkit-transition: 350ms cubic-bezier(0.8, 0.5, 0.2, 1.4);
+  transition: 350ms cubic-bezier(0.8, 0.5, 0.2, 1.4);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.c-burger--open span:nth-child(2) {
+  left: 6px;
+  top: 6px;
+}
+
+.c-burger--open span:nth-child(4) {
+  top: 18px;
+  left: 6px;
+}
+
+.c-burger--open span:nth-child(6) {
+  right: 6px;
+  top: 6px;
+}
+
+.c-burger--open span:nth-child(8) {
+  bottom: 6px;
+  left: 18px;
 }
