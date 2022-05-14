@@ -1,0 +1,18 @@
+.e-button {
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s linear;
+  background-color: $c-blood;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-style: none;
+  width: fit-content;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 0 35px;
+  color: $c-white;
+  height: 60px;
+  &:hover {
+    box-shadow: 0px 5px 12px -4px $c-blood;
+  }
+}

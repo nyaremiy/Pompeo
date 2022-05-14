@@ -41,3 +41,12 @@ h6 {
 .container {
   @include maxCentered(1175, 20);
 }
+.h-red-word {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  color: $c-blood;
+  font-size: 68px;
+  @media (max-width: 1024px) {
+    font-size: 44px;
+  }
+}
